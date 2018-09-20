@@ -1,0 +1,13 @@
+<input type=text id="myText01" value=15>
+<input type=button value="run for loop" onclick="{
+  document.getElementById('myDiv01').innerHTML=''
+  for(let x=0;  x < document.getElementById('myText01').value;   x++){
+     
+     id(x % 2 == 0){
+          document.getElementById('myDiv01').innerHTML += 'Even number, '
+  }
+  document.getElementById('myDiv01').innerHTML += 'x is ' + x + '<br>'
+}
+}">
+<div id="myDiv01">...</div>
+  
