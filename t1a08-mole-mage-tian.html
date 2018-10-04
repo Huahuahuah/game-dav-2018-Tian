@@ -1,0 +1,42 @@
+
+<h3 align=center > My Moving images by tian</h3>
+
+<script>
+
+document.onkeydown = checkKey;
+
+function checkKey(myEvent) {
+  document.getElementById('myDiv01').innerHTML = 'keyCode: '+myEvent.keyCode
+  if(myEvent.keyCode == 38){document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) - 5 + 'px'
+  document.getElementById('myImage01').style.transform= 'rotate(360deg)'
+}   // up arrow = 38
+  if(myEvent.keyCode == 40){document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + 5 + 'px'
+  document.getElementById('myImage01').style.transform= 'rotate(180deg)'
+}   // down arrow = 40
+  
+  if(myEvent.keyCode == 39){document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) + 5 + 'px' 
+  document.getElementById('myImage01').style.transform= 'rotate(90deg)'
+}   // --> arrow =39
+  if(myEvent.keyCode == 37){document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) - 5 + 'px' 
+  document.getElementById('myImage01').style.transform= 'rotate(270deg)'
+}   // left arrow =37
+
+  if(myEvent.keyCode == 87){document.getElementById('myImage02').style.top = parseInt(document.getElementById('myImage02').style.top) - 5 + 'px'}   // W = 87
+}
+
+</script> 
+
+<div id="myDiv01">...</div>
+
+<img id = "myImage01" width=25
+src="http://www.animatedimages.org/data/media/600/animated-rocket-and-space-shuttle-image-0035.gif" style="position:absolute; left:800px; top:400px">
+
+<img id = "myImage02" width=150
+src="https://www.mpsd.ca/Style%20Library/Images/LogoHeader.png" style="position:absolute; left:1 00px; top:100px">
+
+
+<input type=button value="Up" onclick="{
+  document.getElementById('myImage01').style.top =
+     parseInt(document.getElementById('myImage01').style.top) - 5 + 'px'
+}">
+
