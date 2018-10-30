@@ -1,0 +1,27 @@
+
+
+ 
+
+<h2 align=center>Math functions by Fred</h2>
+
+<input id="myIn" type=text  value="25">
+
+<input type=button value="Math.sqrt()" onclick="{
+
+  document.getElementById('myOut').innerHTML = 
+     Math.sqrt(parseFloat(document.getElementById('myIn').value))
+           
+}">
+
+<input id="myIn" type=text  value="180">
+
+<input type=button value="Math.cos()" onclick="{
+
+  document.getElementById('myOut').innerHTML = 
+     Math.cos(parseFloat(document.getElementById('myIn').value*Math.PI/180))
+           
+}">
+
+<div id="myOut">...</div><br>
+
+<a href="https://www.w3schools.com/js/js_math.asp">Math lookup</a>
