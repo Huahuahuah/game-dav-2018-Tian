@@ -1,24 +1,30 @@
-<h2 align=<enter>Id Staement by tian </h2>
 
+
+
+
+<h2 align=center>If Statements by tian</h2>
 <input id="myIn" type=text value=2>
 
-<input type=button value="decision id statement"
-onclick="{
-document.getElemrntById("myOut").innerHTML = ''
+<input type=button value="decision if statement" onclick="{
+   document.getElementById('myOut').innerHTML = ''
+ 
+  x = document.getElementById('myIn').value
 
-  x = document.getElemrntById("myIn").value
-  
-  if( x <= 3){
-  document.getElemrntById("myOut").innerHTML +=
-              'wow the number is less than 3'
-}
+  if ( x <= 3){
+      document.getElementById('myOut').innerHTML += 
+           'wow the number is less than 3<br>' 
+  }
 
-  if( x <= 3){
-  document.getElemrntById("myOut").innerHTML +=
-              'wow the number is less than -3'
-}
+  if ( x <= -3){
+      document.getElementById('myOut').innerHTML += 
+           'wow the number is less than -3<br>' 
+  }
 
+  if ( x >= 3){
+      document.getElementById('myOut').innerHTML += 
+           'wow it is good<br>' 
+  }
 
 }">
 
-<div id="myOut"...</div> 
+<div id="myOut">...</div>
