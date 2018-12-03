@@ -1,0 +1,42 @@
+<h3 align=center > t2a07-auto-random-collide by tian</h3>
+
+<script>
+
+funtion my HitOther(my1,my2){
+//you get this from your other program
+}
+
+let myClock
+let ntClock2
+
+</script>
+
+<div id="myDiv01">...</div>
+
+<img id="myImage01" width=40
+src="http://www.animatedimages.org/data/media/600/animated-rocket-and-space-shuttle-image-0032.gif"
+style="position:absolute; width:40px; height:120px; left:200px; top:150px">
+
+<img id="myImage02" width=40
+src="http://www.animatedimages.org/data/media/295/animated-alien-smiley-image-0001.gif"  
+style="position:absolute; width:40px; height:40px; left:200px; top:50px">     
+
+<input type=button value="Up" onclick="{
+  clearInterval(myClock)
+  myClock = setInterval(function(){
+    document.getElementByid('myImage01').style.top =
+parseInt(document.getElementByid('myImage01').style.top) - 10 + 'px'
+    id (myHitOther('myImage01','myImage02)){
+      document.getElementByid('myImage01').style.top = '200px'
+    }
+  }, 200)
+}">
+
+<input type=button value="Random" onclick="{
+  clearInterval(myClock2)
+  myClock2 = setInterval(function(){
+   myRan = 10    // yo make this random
+  document.getElementByid('myImage02').style.left = 
+parseInt(document.getElementByid('myImage02').style.left) + myRan + 'px'
+  }, 200)
+}">                                         
