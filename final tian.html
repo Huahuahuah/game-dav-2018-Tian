@@ -46,7 +46,6 @@ function checkKey(myEvent) {
               location = 'http://google.ca'
           }
 
-
    }
 
 
@@ -77,6 +76,11 @@ function checkKey(myEvent) {
 }   // D = 68
 
 }
+
+
+let myClock
+let myClock2
+
 </script> 
 
 Score: <input id="myScore" type=number value=0><br>
@@ -88,15 +92,13 @@ Score: <input id="myScore" type=number value=0><br>
 
 <img id = "myImage03" src="https://img.chewy.com/is/image/catalog/64254_MAIN._AC_SL1500_V1508787726_.jpg" style="position:absolute; width:100px; height:70px; left:500px; top:100px">
 
-<input type=button value="Up" onclick="{
-   console.log('up start')
-   document.getElementById('myImage01').style.top = 
-     parseInt(document.getElementById('myImage01').style.top) - 5 + 'px'
-   if (myHitOther('myImage01','myImage03')){;
-         document.getElementById('myImage01').style.top ='200px'
-         document.getElementById('myDiv01').innerHTML = 'Ouch'
-         document.getElementById('myScore').value = 200
-   }
 
+<input type=button value="Random" onclick="{
+   clearInterval(myClock2)
+   myClock2 = setInterval(function(){
+     myRan = Math.round(Math.random()*50)-30   // yo make this random
+     document.getElementById('myImage03').style.left = parseInt(document.getElementById('myImage03').style.left) + myRan + 'px'
+     document.getElementById('myImage03').style.top = parseInt(document.getElementById('myImage03').style.top) + myRan + 'px'
+  }, 200)
 }">
 
